@@ -86,7 +86,7 @@ h3{
     position: fixed;
     top: 0px;
     right: 0px;
-    background-color: transparent;
+    background-color:  #d8b176;
     z-index: 10;
     width: 100%;
     height: 100px; 
@@ -297,6 +297,8 @@ h5{
 }
 
 html, body {
+    overflow-x: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
