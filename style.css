@@ -1,5 +1,4 @@
 .intro{
-    
     width: 100%;
     height: 100%;
     background: url('drew-coffman-1872.jpg');
@@ -11,9 +10,18 @@
     margin-left: 0;
     
 }
+.layer{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
 .intro-text{
-  padding-top: 200;
-    text-align: center;
+    position: relative;
+    z-index: 1;
+   padding-top: 200;
+   text-align: center;
 }
 .intro-text p{
     color: rgba(255, 255, 255, 0.5);
@@ -27,12 +35,17 @@
 }
 
 .intro button{
+    text-align: center;
     height:50px;
     margin-top:20px;
     margin-right: 5px;
-    padding: 15px 25px;
+    padding:10px 15px;
     font-family: 'Cormorant Garamond';
     font-size: large;
+    border-radius: 3px;
+    transition-property: background-color,color;
+    transition-duration: 700ms;
+    transition-timing-function: ease-in-out;
 
 }
 .contact-b{
@@ -53,21 +66,78 @@
     color: black;
 }
 
-.navbar-list li a:hover {
-    color: #8F754F;
+.scroll-button-parent{
+   margin-left: 48vw;
+   width:30px;
+   height:50px;
+   bottom: 10px;
+   position: absolute;
+   border-radius: 5rem;
+   border: 1px solid white;
+   cursor: pointer;
+
 }
 
+.scroll-button{
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 8px;
+    top:1px;
+    border-radius: 50%;
+    animation-name: animate-to-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
+@keyframes animate-to-bottom {
+    0%{
+        opacity: 0;
+        top: 10%;
+    }
+    50%{
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        opacity: 0;
+        top: 80%;
+    }
+    
+}
+
+.navbar-list li a:hover {
+    color: #8F754F;
+    transition-property: background-color,color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.gallery-title{
+    text-align: center;
+}
 .gallery{
     width: 80% ;
-    margin: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .item-gallery{
-    
-    display: inline-block;
+    margin: 0 20px;
     width: 33%;
+    transition: 0.5s ease-in-out transform;
 }
+
+.item-gallery:hover{
+ transform: scale(1.1);
+}
+
+
 p{
     text-align: center;
 }
@@ -135,7 +205,7 @@ body {
     background-color: #FFFFFF;
     width: 100%;
     margin-top: 120px;
-    margin-left: 120px;
+    padding-left: 120px;
     display: flex; /* Use flexbox to create a row layout */
     align-items:center; /* Align items vertically */
 }
@@ -301,4 +371,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
