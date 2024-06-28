@@ -10,13 +10,13 @@
     margin-left: 0;
     
 }
-.layer{
+/* .layer{
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.3);
-}
+} */
 .intro-text{
     position: relative;
     z-index: 1;
@@ -29,7 +29,7 @@
     font-size: 1.2em;
 }
 .intro-text h1{
-    font-size: 4em;
+    /* font-size: 4em; */
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -143,13 +143,14 @@
 
 h2,h3,h4{
   font-weight: 500;
-  font-family: 'Alegreya ',serif,monospace;
+  font-family: 'Cormorant Garamond';
   color: #303030;
 }
 
 h1{
+    font-size: calc(1.625rem + 4.5vw);
  font-weight: 600;
-  font-family: 'Alegreya ',serif,monospace;
+  font-family: 'Cormorant Garamond';
   color: #303030;
 
 }
