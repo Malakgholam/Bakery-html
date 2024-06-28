@@ -2,18 +2,20 @@
   <title>Bakery</title>
   <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   </head>
   
   
   <body>
     <div class="intro">
-      <div class="layer"></div>
+      
       <div class="intro-text">
-        <p>Welcome to</p>
-        <h1>Family Bakery</h1>
-        <p>We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
+        <p class="mb-5">Welcome to</p>
+        <h1 class="mb-3">Family Bakery</h1>
+        <p class="mb-5">We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
         <div >
           <button class=" button contact-b" >contact us</button>
           <button class="button learn-b" >learn more</button>
@@ -25,142 +27,179 @@
       
     </div>
     
-      <div class="navbar">
-      
-          <div class="logo">
-              <img src="bakery-light-1.png" alt="Logo">
-          </div>
-          <ul class="list navbar-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About </a></li>
-              <li><a href="#">our offers</a></li>
-              <li><a href="#">contact</a></li>
-              <!-- Add more list items as needed -->
-          </ul>
-      </div>
-  
-  
-      <div id="about-sec" class="About">
-          <div class="About-img">
-             <img  src="alexandru-stavrica-170390-800x760.jpg" alt="">
-          </div>
-          <div class="About-text">
-             <h2>Who Are We ?</h2>
-             <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
-             <ul class="icon-list">
-                <li> 
-                  
-                  We care about environment.
-                </li>
-                <li> 
-                  
-                  We are trusted by hundreds of clients.
-                </li>
-                <li> 
-                  
-                  Social media loves us!
-                </li>
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-transparent">
+      <div class="container">
+        <a class=" logo navbar-brand" href="#"> <img class="w-100" src="bakery-light-1.png" alt="logo" id="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse in"  id="navbarSupportedContent" >
+    
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" >
+                  Our Offer
+                </a>
+                
+                  <li><a class="nav-link" href="#">Gallery</a></li>
                   
-                  This list is super easy to create.
+                  <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
               </li>
             </ul>
+          
           </div>
-       </div>
-      
+        </div>
+      </div>
+    </nav>
   
-       <div class="offer">
-          <div class="offer-text">
-              <h2>Our Location</h2>
+    <div  id="about-sec" class="container py-5 ">
+      <div  class="row align-items-center ">
+        <div class=" about-img col-md-6 ">
+           <img  src="alexandru-stavrica-170390-800x760.jpg" alt="">
+        </div>
+        <div class="About-text col-md-6 mt-5 mt-md-0">
+           <h2 class="heading-color fs-1 mb-4">Who Are We ?</h2>
+           <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+           <ul class="icon-list">
+              <li class="mb-3"> 
+                
+                We care about environment.
+              </li>
+              <li class="mb-3"> 
+                
+                We are trusted by hundreds of clients.
+              </li>
+              <li class="mb-3"> 
+                
+                Social media loves us!
+              </li>
+            </li>
+            <li class="mb-3"> 
+                
+                This list is super easy to create.
+            </li>
+          </ul>
+        </div>
+     </div>
+    </div>
+      
+    <div class="bg-light">
+      <div class="container py-5 ">
+        <div class="row align-items-center">
+          <div class="offer-text col-md-6 ">
+              <h2  class="heading-color fs-1 mb-4">Our Location</h2>
               <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
                <br/>
               <p>Story on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
            </div>
-           <div class="offer-img">
+           <div class="offer-img col-md-6 mt-5 mt-md-0">
               <img src="full-2-800x640.jpg" alt>
            </div> 
        </div>
-    
-       <div class="gallery-title"><h2>our baking</h2> </div>
-     <div class="gallery">
-      
-  
-         <div class="item-gallery">
-            <img src="photo1.jpg" alt="Description of the image">
-            <h3>Superior Breads</h3>
-            <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
-          </div>
-         <div class="item-gallery" >
-            <img src="photo2.jpg" alt="Description of the image">
-            <h3>Bagels</h3>
-            <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
-         </div>
-        <div class="item-gallery">
-             <img src="photo3.jpg" alt="Description of the image">
-            <h3>cookies</h3>
-            <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
-        </div>
-   </div>
-  
-     
-     
-     <div class="contact">
-      <div class="contact-text">
-          <h2>Contact Information</h2>
-          <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-           <br/>
-          <p>our contact details :</p>
-          <ul>
-            <li>Manchester St 123-78B, Random 713, UK</li>
-            <li>+46 123 456 789</li>
-            <li>+37 431 456 789</li>
-            <li>hello@sitename.com</li>
-          </ul>
-       </div>
-       <div class="contact-img">
-          <img src="map.png" alt>
        </div> 
-    </div>
+    </div>  
+     
+       
+    
+       
+
+       <div class=" py-5 container">
+        <div class="gallery-title text-center"><h2  class="heading-color fs-1 mb-4">Our Baking</h2> </div>
+
+              <div class=" row gallery align-items-center">
+                    <div class=" item-gallery col-lg-4 col-sm-12 text-center mb-4 mb-md-0 ">
+                      <img src="photo1.jpg" alt="Description of the image">
+                      <h3 class="my-3">Superior Breads</h3>
+                      <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
+                    </div>
+                    <div class=" item-gallery col-lg-4 col-sm-12 text-center mb-4 mb-md-0" >
+                      <img src="photo2.jpg" alt="Description of the image">
+                      <h3 class="my-3">Bagels</h3>
+                      <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
+                    </div>
+                  <div class="item-gallery col-lg-4 col-sm-12 text-center mb-4 mb-md-0">
+                        <img src="photo3.jpg" alt="Description of the image">
+                      <h3 class="my-3">cookies</h3>
+                      <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere</p>
+                  </div>
+              </div>
+       </div>
+
+
   
-    <div class="container">
-        <div class="col">
-            <h4>About Us</h4>
-            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
-             <p>We are the champions! We are the most amazing theme of all time, yeah.</p>
+    <div class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+              <h2  class="heading-color fs-1 mb-4 ">Contact Information</h2>
+              <p class="mb-3">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+               <br/>
+              <p>our contact details :</p>
+              <ul>
+                <li class="mb-3">Manchester St 123-78B, Random 713, UK</li>
+                <li class="mb-3">+46 123 456 789</li>
+                <li class="mb-3">+37 431 456 789</li>
+                <li class="mb-3">hello@sitename.com</li>
+              </ul>
+           </div>
+           <div class="col-md-6 mb-4 mb-md-0 ">
+              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.4777994691203!2d31.267982564490023!3d29.96569572924465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839c7d6eb9209%3A0xdaf018bd39626760!2sTalon%20maadi!5e0!3m2!1sen!2seg!4v1647250028343!5m2!1sen!2seg" width="600" height="300" style="border:0;" allowfullscreen loading="lazy" > </iframe>
+           </div> 
+        </div>
+      </div>
+
+    </div> 
+     
+     
+
+
+    <div class="py-5 bg-sec text-center text-md-start">
+      <div class=" container last-con">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h4  class="text-white  mb-4 my-3">About Us</h4>
+            <p class="text-white-50">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
+             <p class="text-white-50">We are the champions! We are the most amazing theme of all time, yeah.</p>
          </div> 
-        <div class="col">
-              <h4>Why We Are Special?</h4>
+        <div class="col-lg-3 col-md-6">
+              <h4  class="text-white  mb-4 my-3">Why We Are Special?</h4>
               <ul class="list-unstyled">
-                  <li class="list-styled">Our magical recipe</li>
-                  <li class="list-styled">We are trusted by hundreds of clients.</li>
-                  <li class="list-styled">Social media loves us!</li>
-                  <li class="list-styled">This list is super easy to create.</li>
+                  <li class="d-flex align-items-center mb-3 custome-border text-white-50 ">Our magical recipe</li>
+                  <li class="d-flex align-items-center mb-3 custome-border text-white-50">We are trusted by hundreds of clients.</li>
+                  <li class="d-flex align-items-center mb-3 custome-border text-white-50">Social media loves us!</li>
+                  <li class="d-flex align-items-center mb-3 custome-border text-white-50">This list is super easy to create.</li>
               </ul>
          </div>     
-         <div class="col">
-              <h4>Opening Hours</h4>
-              <ul class="list-unstyled">
-                  <li class="list-styled">Monday 10AM - 9PM</li>
-                  <li class="list-styled">Tuesday 10AM - 9PM</li>
-                  <li class="list-styled">Wednesday 10AM - 9PM</li>
-                  <li class="list-styled">Thursday 10AM - 10PM</li>
-                  <li class="list-styled">Friday 10AM - 10PM</li>
-                  <li class="list-styled">Weekends 10AM - 11PM</li>
+         <div class="col-lg-3 col-md-6">
+              <h4  class="text-white  mb-4 my-3" >Opening Hours</h4>
+              <ul class="list-unstyled text-white-50">
+                  <li class="d-flex align-items-center mb-3 custome-border">Monday 10AM - 9PM</li>
+                  <li class="d-flex align-items-center mb-3 custome-border">Tuesday 10AM - 9PM</li>
+                  <li class="d-flex align-items-center mb-3 custome-border">Wednesday 10AM - 9PM</li>
+                  <li class="d-flex align-items-center mb-3 custome-border">Thursday 10AM - 10PM</li>
+                  <li class="d-flex align-items-center mb-3 custome-border">Friday 10AM - 10PM</li>
+                  <li class="d-flex align-items-center mb-3 custome-border">Weekends 10AM - 11PM</li>
               </ul>
           </div>     
-          <div class="col">
-             <h4>Contact Details</h4>
-             <ul>
+          <div class="col-lg-3 col-md-6">
+             <h4 class="text-white  mb-4 my-3">Contact Details</h4>
+             <ul class="list-unstyled">
   
-              <li><a href>Manchester Road 123-78B, Silictown 7854MD, Great Country</a></li>
-              <li><a href>
+              <li class="d-flex align-items-center mb-3 "><a class="text-white-50" href>Manchester Road 123-78B, Silictown 7854MD, Great Country</a></li>
+              <li class="d-flex align-items-center mb-3 "><a class="text-white-50" href>
                 +46 123 456 789
             </a></li>
-            <li><a href>
+            <li class="d-flex align-items-center mb-3 "><a class="text-white-50" href>
               Friday 10AM - 10PM Weekends 10AM - 11PM Contact Details Manchester Road 123-78B, Silictown 7854MD, Great Country +46 123 456 789 hello@sitename.com
           </a></li>
-          <li><a href>    
+          <li class="d-flex align-items-center mb-3"><a class="text-white-50" href>    
             http://www.sitename.com
         </a></li>
              </ul>
@@ -169,6 +208,10 @@
            </div> 
         
       </div>
+        </div>
+    </div>
+    
+        
   
     <div class="last">
       <div class="last-logo">
@@ -176,6 +219,10 @@
           <h5>Copyright 2022. All rights reserved.</h5>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
   </body>
   

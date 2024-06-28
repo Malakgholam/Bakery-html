@@ -40,7 +40,7 @@
     margin-top:20px;
     margin-right: 5px;
     padding:10px 15px;
-    font-family: 'Cormorant Garamond';
+    
     font-size: large;
     border-radius: 3px;
     transition-property: background-color,color;
@@ -109,137 +109,101 @@
     
 }
 
-.navbar-list li a:hover {
+.navbar  a:hover {
     color: #8F754F;
     transition-property: background-color,color;
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
 }
+.nav-link-active{
+    color:#8F754F ;
+}
 
-.gallery-title{
-    text-align: center;
-}
-.gallery{
-    width: 80% ;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: nowrap;
+.nav-link {
+    padding: 0 15px !important;
     
+    letter-spacing: .5px;
 }
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .item-gallery{
-    margin: 0 20px;
-    width: 33%;
+    
     transition: 0.5s ease-in-out transform;
-}
+} 
 
 .item-gallery:hover{
  transform: scale(1.1);
 }
 
-
-p{
-    text-align: center;
+h2,h3,h4{
+  font-weight: 500;
+  font-family: 'Alegreya ',serif,monospace;
+  color: #303030;
 }
-h2{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+
+h1{
+ font-weight: 600;
+  font-family: 'Alegreya ',serif,monospace;
+  color: #303030;
+
 }
 h3{
     text-align: center;
 }
-.item-gallery img{
-    width: 100%;
-}
+
 .navbar {
-    position: fixed;
-    top: 0px;
-    right: 0px;
+    padding: 25px 0;
     background-color:  #d8b176;
-    z-index: 10;
-    width: 100%;
-    height: 100px; 
-    display: flex;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    align-items: center;
-    
+
+}
+.logo{
+  
+    width: 140px;
 }
 
-.logo img {
-    margin: 15px;
-    max-height: 60px;
-    margin-left: 150px; /* Adjust the height of the logo as needed */
-}
-.navbar-list {
-    
-    text-align: left;
-    list-style: none;
-    margin-top: 2.5%;
-    margin-left: auto;
-    margin-right:8%;
-    display: flex;
-}
 
-.navbar-list li {
-
-    margin-left: 20px; /* Add some spacing between list items */
-}
-
-.navbar-list li:first-child {
-    margin-left: 0; /* Remove margin for the first list item */
-}
-
-.navbar-list li a {
-    text-decoration: none;
-    color:white; /* Adjust link color as needed */
-    /* Add any other styling for links */
-}
 
 body {
-    font-family: 'Cormorant Garamond';font-size: 22px;
+    font-family: 'Alegreya Sans';font-size: 15px;
+    color: #666666
 }
 
-/* Style for the "About" section */
+
 .About {
     background-color: #FFFFFF;
     width: 100%;
     margin-top: 120px;
     padding-left: 120px;
-    display: flex; /* Use flexbox to create a row layout */
-    align-items:center; /* Align items vertically */
+    display: flex; 
+    align-items:center; 
 }
 
-/* Style for the image container */
-.About-img {
-    padding-left: 60px;
-    flex: 0.7; 
-    padding-right: 20px;
-    margin-right: 5%;
-    margin-bottom: 100px;
-    width: 50%;
-}
 
-/* Style for the image */
 .About-img img {
      max-width: 100%; 
     
 }
 
-/* Style for the text container */
 .About-text {
     width:50%;
     flex: 1; 
     margin: 0;
 }
 
-/* Style for the heading */
+
 .About-text h2 {
     text-align: left;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
 }
 
-/* Style for the paragraph */
+
 .About-text p {
     width: 65%;
     text-align: left;
@@ -250,25 +214,16 @@ body {
 
 .offer{
     width: 100%;
-    background-color:#F8F9FA;
     padding: 10%;
-    display: flex; /* Use flexbox to create a row layout */
+    display: flex; 
     align-items:center; 
 
 }
-.offer-img{
-    width: 40%;
-    margin-right: 20%;
-}
+
 .offer-img img{
     max-width: 100%; 
 }
-.offer-text{
-    width: 60%;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex: 1;
-}
+
 .offer-text p{
     
     text-align: left;
@@ -277,11 +232,11 @@ body {
 }
 .offer-text h2 {
     text-align: left;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
 }
 
 .contact{
-    background-color:#F8F9FA;
+   
     width: 100%;
     padding: 10%;
     margin-top: 120px;
@@ -313,38 +268,28 @@ body {
 .contact-text ul{
     line-height: 1.5;
 }
-.container {
 
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 10%;
-    background-color: rgb(152, 131, 103);
-    display: flex; 
-    flex-direction: row; 
-    gap: 20px; 
+
+.bg-sec{
+    background-color: #403D38;
 }
-.container a{
-    color: #F8F9FA;;
-}
+
 .col {
     color: #F8F9FA;
     width: 20%;
     margin:20px;
 }
-.list-unstyled {
-    padding-left: 10px;
-    list-style:georgian;
+
+.custome-border {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.list-styled{
-    padding-bottom: 2rem;
-    border-bottom: 2px solid rgba(255, 255, 255, .5);
-}
 
 .last{
     width: 100%;
     height: 40%;
-    background-color: rgb(105, 91, 72);
+    background-color:#353330;
     margin-bottom: 0;
     margin-left: 0;
 
@@ -362,7 +307,7 @@ h5{
     color: antiquewhite;
 }
 
-.col p{
+.last-con p{
     text-align: left;
 }
 
@@ -375,3 +320,13 @@ html, body {
 html{
     scroll-behavior: smooth;
 }
+
+.bg-light{
+   background-color: #F8F9FA;
+}
+
+
+.heading-color {
+    color:#303030;
+}
+
