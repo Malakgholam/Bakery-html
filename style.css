@@ -1,6 +1,6 @@
 .intro{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: url('drew-coffman-1872.jpg');
     background-size: cover;
     background-position: center center;
@@ -10,7 +10,13 @@
     margin-left: 0;
     
 }
-/* .layer{
+/* @media (max-width: 768px) {
+    .intro {
+        background-image: url('drew-coffman-phone.jpg'); /* Smaller or different version of the image 
+}
+}
+
+/* .layer{r
     position: absolute;
     z-index: 0;
     width: 100%;
@@ -20,7 +26,7 @@
 .intro-text{
     position: relative;
     z-index: 1;
-   padding-top: 200;
+   padding-top: 300;
    text-align: center;
 }
 .intro-text p{
@@ -153,8 +159,8 @@ h2,h3,h4{
 }
 
 h1{
-    font-size: calc(1.625rem + 4.5vw);
- font-weight: 600;
+font-size: calc(1.625rem + 4.5vw);
+  font-weight: 600;
   font-family: 'Cormorant Garamond';
   color: #303030;
 
